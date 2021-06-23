@@ -120,6 +120,24 @@ body {
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50 px);
 }
+.profile-category-max-width {
+  max-width: 630px;
+}
+@media (max-width: 1200px) {
+  .profile-category-max-width {
+    max-width: 540px;
+  }
+}
+@media (max-width: 992px) {
+  .profile-category-max-width {
+    max-width: 610px;
+  }
+}
+@media (max-width: 768px) {
+  .profile-category-max-width {
+    max-width: 696px;
+  }
+}
 /*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
