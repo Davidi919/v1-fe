@@ -1,4 +1,4 @@
-<div class="purchase-show container sc-max-width-wrapper mx-auto">
+<div class="purchase-show max-width-wrapper mx-auto">
     <div class="row">
         <div class="col-md-12 col-sm-12">
             <div class="artist-info">
@@ -7,22 +7,29 @@
                     <h3 class="artist-name">{{ event?.performers[0]?.name }}</h3>
                     <p class="event-title">{{ event?.name }}</p>
                     <div class="row">
-                        <div class="event-start">
+                        <!-- commented out for styling -->
+                        <!-- <div class="event-start">
                             {{ streamingDate(event) }}
+                        </div> -->
+                        <div class="event-start-wrapper">
+                            <div class="event-start">
+                                <p class="event-date">Coming to Salticorn on <span class="alt-color">05 September 2021</span></p>
+                            </div>
                         </div>
                     </div>
-                    <section class="share">
+                    <section class="share d-flex align-items-center">
                         <!--
                             <button type="button" class="btn btn-preview" data-bs-toggle="modal" data-bs-target="#previewModal" (click)="openPreview(1)"><img src="../../images/icons/play-circle-outline.svg" alt="play"> Preview</button>
                         <button type="button" class="btn btn-share" data-bs-toggle="modal" data-bs-target="#shareModal"><img src="../images/icons/share.svg" alt="share"> Share</button>
                         -->
                         <button type="button" class="btn btn-purchase" data-bs-toggle="modal" data-bs-target="#purchaseModal"> Purchase</button>
-                        <button type="button" class="btn btn-preview" data-bs-toggle="modal" data-bs-target="#shareModal"><i class="far fa-play-circle fa-2x"></i> <span class="preview-btn-text">Preview</span></button>
+                        <button type="button" class="btn btn-preview d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#shareModal"><i class="far fa-play-circle fa-2x"></i> <span class="preview-btn-text">Preview</span></button>
                     </section>
                 </div>
             </div>
             <div class="show-info">
                 <h3 class="title">Show Info</h3>
+                
                 <p class="show-details"> {{ event?.summary }} </p>
             </div>
             <!--

@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'DrukWide';
+  src: url("../../assets/fonts/DrukWide-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/DrukWide-Bold.woff") format("woff"),
+    url("../../assets/fonts/DrukWide-Bold.ttf") format("truetype"),
+    url("../../assets/fonts/DrukWide-Bold.svg#DrukWide-Bold") format("svg");
+  
+}
+
 .purchase-show {
   min-height: 100vh;
   padding-top: 50px;
@@ -5,10 +14,11 @@
 
   .artist-info {
     .artist-name {
-      color: #FFDC4E;
+      color: #ffdc4e;
       font-size: 24px;
       font-weight: 800;
       padding-top: 17px;
+      font-family: "DrukWide";
     }
 
     .event-date {
@@ -31,6 +41,7 @@
       font-size: 28px;
       font-weight: 800;
       margin-bottom: 20px;
+      font-family: 'DrukWide';
     }
 
     .event-start {
@@ -73,7 +84,7 @@
         width: 106px;
         height: 37px;
         margin-left: 20px;
-        background: #2E303D;
+        background: #2e303d;
         border-radius: 6px;
         font-size: 16px;
         color: #fff;
@@ -83,7 +94,6 @@
         width: 20px;
         height: 20px;
         margin: 0px;
-
       }
     }
   }
@@ -93,13 +103,13 @@
 
     .show-details {
       margin-top: 20px;
-      color: #B0B9D3;
+      color: #b0b9d3;
       font-weight: 600;
       font-size: 14px;
     }
 
     .title {
-      color: #FFFFFF;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 600;
     }
@@ -118,7 +128,7 @@
 
     .tickets:hover {
       cursor: pointer;
-      border: 3px solid #FFDC4E;
+      border: 3px solid #ffdc4e;
     }
   }
 
@@ -140,13 +150,13 @@
   }
 
   .body-sub-title {
-    color: #B0B9D3;
+    color: #b0b9d3;
     font-size: 14px;
   }
 }
 
 .modal-content {
-  background-color: #151A27;
+  background-color: #151a27;
   border-radius: 16px;
 }
 
@@ -164,4 +174,34 @@ h5.modal-title {
   margin-left: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.max-width-wrapper {
+  max-width: 1535px !important;
+  padding-left: 0;
+  padding-right: 0;
+  @media (max-width: 14400px) {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+  @media (max-width: 1200px) {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  @media (max-width: 992px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  @media (max-width: 576px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (max-width: 500px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  // @media (max-width: 500px) {
+  //   padding-left: 10px;
+  //   padding-right: 10px;
+  // }
 }
