@@ -8,22 +8,28 @@
 }
 
 .purchase-show {
-  min-height: 100vh;
-  padding-top: 50px;
-  padding-bottom: 162px;
+  // min-height: 100vh;
+  padding-top: 53px;
+  padding-bottom: 80px;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 
   .artist-info {
     .artist-name {
       color: #ffdc4e;
       font-size: 24px;
       font-weight: 800;
-      padding-top: 17px;
-      font-family: "DrukWide";
+      padding-top: 20px;
+      margin-bottom: 10px;
+      font-family: "DrukWide", sans-serif;
+      letter-spacing: 0.58px;
     }
 
     .event-date {
       padding: 0px;
       vertical-align: middle;
+      margin-bottom: 2px;
 
       .e-d-text {
         margin-right: 20px;
@@ -40,12 +46,13 @@
       color: #fff;
       font-size: 28px;
       font-weight: 800;
-      margin-bottom: 20px;
+      margin-bottom: 17px;
       font-family: 'DrukWide';
     }
 
     .event-start {
       font-size: 18px;
+      font-weight: 600;
     }
 
     img {
@@ -53,10 +60,16 @@
       height: 220px;
       border-radius: 10px;
       margin-right: 31px;
+      @media (max-width:768px) {
+        margin-right: 0;
+      }
     }
 
     .share {
       margin-top: 20px;
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
 
       .btn-preview {
         width: 178px;
@@ -67,13 +80,15 @@
         font-size: 18px;
 
         span.preview-btn-text {
-          padding-left: 10px;
+          padding-left: 14px;
+          font-weight: 600;
         }
       }
 
       .btn-purchase {
         width: 178px;
         height: 56px;
+        margin-right: 20px;
         background: #fff;
         border-radius: 6px;
         color: #0f121c;
@@ -99,19 +114,20 @@
   }
 
   .show-info {
-    margin-top: 62px;
+    margin-top: 32px;
+    text-align: left;
 
     .show-details {
-      margin-top: 20px;
+      margin-top: 14px;
       color: #b0b9d3;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 18px;
     }
 
     .title {
       color: #ffffff;
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 24px;
+      font-weight: 700;
     }
   }
 

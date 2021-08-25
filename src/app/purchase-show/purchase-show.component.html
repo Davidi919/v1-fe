@@ -13,7 +13,8 @@
                         </div> -->
                         <div class="event-start-wrapper">
                             <div class="event-start">
-                                <p class="event-date">Coming to Salticorn on <span class="alt-color">05 September 2021</span></p>
+                                <p class="event-date">Coming to Salticorn on <span class="alt-color">05 September
+                                        2021</span></p>
                             </div>
                         </div>
                     </div>
@@ -22,14 +23,30 @@
                             <button type="button" class="btn btn-preview" data-bs-toggle="modal" data-bs-target="#previewModal" (click)="openPreview(1)"><img src="../../images/icons/play-circle-outline.svg" alt="play"> Preview</button>
                         <button type="button" class="btn btn-share" data-bs-toggle="modal" data-bs-target="#shareModal"><img src="../images/icons/share.svg" alt="share"> Share</button>
                         -->
-                        <button type="button" class="btn btn-purchase" data-bs-toggle="modal" data-bs-target="#purchaseModal"> Purchase</button>
-                        <button type="button" class="btn btn-preview d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#shareModal"><i class="far fa-play-circle fa-2x"></i> <span class="preview-btn-text">Preview</span></button>
+                        <button type="button" class="btn btn-purchase" data-bs-toggle="modal"
+                            data-bs-target="#purchaseModal"> Purchase</button>
+                        <button type="button" class="btn btn-preview d-flex align-items-center" data-bs-toggle="modal"
+                            data-bs-target="#shareModal"><i class=""><svg xmlns="http://www.w3.org/2000/svg" width="56"
+                                    height="56" viewBox="0 0 56 56">
+                                    <g id="Group_2581" data-name="Group 2581" transform="translate(12339 6907)">
+                                        <path id="Path_1564" data-name="Path 1564"
+                                            d="M26.091,19.568,11.774,27.875A1.842,1.842,0,0,1,9,26.307V9.693a1.841,1.841,0,0,1,2.774-1.566l14.317,8.307a1.8,1.8,0,0,1,0,3.134Z"
+                                            transform="translate(-12327 -6896.875)" fill="#fff" />
+                                        <g id="Ellipse_102" data-name="Ellipse 102" transform="translate(-12339 -6907)"
+                                            fill="none" stroke="#62646b" stroke-width="2">
+                                            <circle cx="28" cy="28" r="28" stroke="none" />
+                                            <circle cx="28" cy="28" r="27" fill="none" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </i> <span class="preview-btn-text">Preview</span></button>
                     </section>
                 </div>
             </div>
             <div class="show-info">
                 <h3 class="title">Show Info</h3>
-                
+
                 <p class="show-details"> {{ event?.summary }} </p>
             </div>
             <!--
@@ -45,19 +62,47 @@
 <!-- Modal -->
 <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="purchaseModalLabel">Purchase</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="purchaseModalLabel">Purchase</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <app-ticket [event]="event" [tickets]="event.tickets" *ngIf="event" class="tickets"></app-ticket>
+                <p class="body-title">Payment</p>
+                <p class="body-sub-title">Please confirm your payment details</p>
+                <label for="cardName" class="modal-label col-12">Name on card
+                    <input type="text" class="form-control" id="cardName">
+                </label>
+                <label for="cardNum" class="modal-label col-12">Card number
+                    <input type="text" class="form-control" id="cardNum">
+                </label>
+                <hr class="dotted-line">
+                <div class="row col-12 mx-0">
+                    <label for="currency" class="modal-label col-3">Currency</label>
+                    <select class="form-select col-6" aria-label="Default" id="currency">
+                        <option selected>US dollar</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <hr class="dotted-line">
+                <div class="selection-wrapper">
+                    <p class="body-sub-title text-uppercase">Your Selection</p>
+                    <row class="selection-item">
+                        <span class="item-title alt-color">Streaming Only</span>
+                        <span class="item-cost">$15.00</span>
+                    </row>
+                    <hr class="dotted-line">
+                    <row class="promo-wrapper">
+                        
+                    </row>
+                </div>
+            </div>
+            <div class="d-grid gap-2 modal-button-footer">
+                <button class="btn show-pay-btn" type="button">Pay With Card</button>
+            </div>
         </div>
-        <div class="modal-body">
-            <app-ticket [event]="event" [tickets]="event.tickets" *ngIf="event" class="tickets"></app-ticket>
-            <p class="body-title">Payment</p>
-            <p class="body-sub-title">Please confirm your payment details</p>
-        </div>
-        <div class="d-grid gap-2 modal-button-footer">
-            <button class="btn show-pay-btn" type="button">Pay With Card</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
