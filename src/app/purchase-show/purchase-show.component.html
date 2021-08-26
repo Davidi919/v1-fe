@@ -26,7 +26,8 @@
                         <button type="button" class="btn btn-purchase" data-bs-toggle="modal"
                             data-bs-target="#purchaseModal"> Purchase</button>
                         <button type="button" class="btn btn-preview d-flex align-items-center" data-bs-toggle="modal"
-                            data-bs-target="#shareModal"><i class=""><svg xmlns="http://www.w3.org/2000/svg" width="56"
+                            data-bs-target="#shareModal"><i class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56"
                                     height="56" viewBox="0 0 56 56">
                                     <g id="Group_2581" data-name="Group 2581" transform="translate(12339 6907)">
                                         <path id="Path_1564" data-name="Path 1564"
@@ -69,7 +70,7 @@
             </div>
             <div class="modal-body">
                 <app-ticket [event]="event" [tickets]="event.tickets" *ngIf="event" class="tickets"></app-ticket>
-                <p class="body-title">Payment</p>
+                <p class="modal-title">Payment</p>
                 <p class="body-sub-title">Please enter your card information below</p>
                 <label for="cardName" class="modal-label col-12">Name on card
                     <input type="text" class="form-control" id="cardName">

@@ -4,11 +4,16 @@
   opacity: 1;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  padding: 20px;
+  padding: 24px;
   margin-bottom: 30px;
 
   .fa-circle {
     color: #FFDC4E;
+  }
+  .access-title {
+    margin-bottom: 7px;
+    font-size: 22px;
+    font-weight: 700;
   }
 
   .form-select {

@@ -8,7 +8,6 @@
 }
 
 .purchase-show {
-  // min-height: 100vh;
   padding-top: 53px;
   padding-bottom: 80px;
   @media (max-width: 768px) {
@@ -47,7 +46,7 @@
       font-size: 28px;
       font-weight: 800;
       margin-bottom: 17px;
-      font-family: 'DrukWide';
+      font-family: 'DrukWide', sans-serif;
     }
 
     .event-start {
@@ -157,7 +156,7 @@
 }
 
 .modal-body {
-  padding: 0 38px 0 38px;
+  padding: 0 37px;
   .form-select {
     width: initial;
   }
@@ -184,6 +183,7 @@
 
 .modal-header {
   border-bottom: none;
+  padding: 38px 38px 18px 38px;
   .btn {
     font-size: 12px;
     color: #B0B9D3;
@@ -194,12 +194,13 @@
   }
 }
 
-h5.modal-title {
+.modal-title {
   font-size: 32px;
   font-weight: 800;
-  margin-left: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'DrukWide', sans-serif;
+  letter-spacing: 0.96px;
 }
 .show-apple-btn {
   background-color: #000;
