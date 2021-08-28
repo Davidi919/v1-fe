@@ -21,6 +21,7 @@
 }
 .currency {
   margin-bottom: 40px;
+  justify-content: space-between;
   label {
     font-size: 14px;
   }
@@ -28,12 +29,19 @@
 .promo-wrapper {
   margin-bottom: 40px;
   input[type=checkbox] {
-    width: 22px;
-    height: 22px;
+    width: 20.5px;
+    height: 20.5px;
     border-radius: 5px;
-    border: 1.5px solid #FFDC4E;
+    border: 1.5px solid #B0B9D3;
     background-color: transparent;
     margin: 0 11px 0 0; 
+    &:checked {
+      background-color: #ffdc4e;
+      background-image: url('../../images/icons/checkBlack.svg');
+      background-size: 15px;
+      border-color: #ffdc4e;
+      background-position: center;
+    }
   }
 }
 .subtotals-wrapper {
@@ -64,6 +72,10 @@
     font-weight: 500;
   }
 }
+.show-pay-btn {
+  margin-bottom: 10px;
+}
+
 .purchase-show {
   padding-top: 53px;
   padding-bottom: 80px;
@@ -214,6 +226,10 @@
 
 .modal-body {
   padding: 0 37px;
+  @media (max-width: 575px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .form-select {
     width: 75%;
     height: 39px;
@@ -223,6 +239,9 @@
     border: 0;
     background-image: url('../../images/icons/dropdownArrow.svg');
     background-size: 13px 6px;
+    @media (max-width: 575px) {
+      width: 60%;
+    }
   }
   .body-title {
     font-size: 32px;
@@ -245,11 +264,19 @@
 
 .modal-button-footer {
   padding: 30px;
+  @media (max-width: 575px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .modal-header {
   border-bottom: none;
   padding: 38px 38px 18px 38px;
+  @media (max-width: 575px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .btn {
     font-size: 12px;
     color: #b0b9d3;
@@ -267,13 +294,20 @@
   margin-bottom: 10px;
   font-family: "DrukWide", sans-serif;
   letter-spacing: 0.96px;
+  @media (max-width: 575px) {
+    font-size: 28px;
+  }
 }
 .payment-title {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 .show-apple-btn {
   background-color: #000;
   color: #fff;
+  margin-bottom: 12px;
+  span {
+    margin-left: 12px;
+  }
 }
 .modal-label {
   font-size: 18px;

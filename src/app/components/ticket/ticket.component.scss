@@ -130,13 +130,16 @@
 .form-switch {
   margin-bottom: 19px;
   .form-check-input {
+    &:active, &:focus {
+      border: none;
+    }
     transition: 0ms;
     width: 48px;
     height: 27px;
     background-color: #6e6f77;
     background-image: url("../../../images/icons/ticketSwitch--off.svg");
     background-size: 22px;
-    background-position: 2px 2px;
+    background-position: 3px 1.5px;
     &:checked {
       background-image: url("../../../images/icons/ticketSwitch--on.svg");
       background-color: #ffdc4e;
