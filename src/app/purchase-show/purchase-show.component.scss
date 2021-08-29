@@ -12,8 +12,44 @@
   transform: none;
   transition: 0s;
 }
-#purchaseModal {
+.show-more-btn {
+  width: min-content;
+  display: inline;
+  // margin-left: -30px;
+  // background: transparent linear-gradient(90deg, #151A2700 -30%, #1B1D2B 70%) 0% 0% no-repeat padding-box;;
+}
+#purchaseModal, #showMore {
   background-color: rgba(0, 0, 0, 0.6);
+}
+.more-close-btn {
+  position: relative;
+  top: -60px;
+  right: -35px;
+  width: 65px;
+  height: 25px;
+}
+.show-more-modal {
+  
+  .modal-title {
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+  }
+  .modal-body {
+    font-weight: 500;
+    margin-top: -10px;
+    margin-bottom: 7px;
+  }
+}
+.promo-btn {
+  height: 51px;
+  width: 106px;
+  background-color: #363847;
+  font-size: 14px;
+  border: none;
 }
 .dotted-line {
   background-image: linear-gradient(
@@ -57,6 +93,9 @@
   .checkbox-text {
     font-weight: 14px;
     font-weight: 600;
+  }
+  .promo-field-wrapper {
+    margin-top: 20px;
   }
 }
 .subtotals-wrapper {
