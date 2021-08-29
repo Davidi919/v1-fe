@@ -36,6 +36,8 @@
   li {
     color: white;
     margin-bottom: 15px;
+    margin-left: -4px;
+    font-weight: 700;
   }
   .light-text {
     color: #b0b9d3;
@@ -106,7 +108,7 @@
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.54px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .add-on-cost {
     font-size: 20px;
@@ -119,7 +121,9 @@
     margin-bottom: 8px;
     .description-title {
       font-size: 22px;
-      font-weight: 700;
+      font-weight: 800;
+      display: block;
+      max-width: 80%;
     }
     .description-list {
       margin-bottom: 25px;
@@ -128,7 +132,7 @@
   }
 }
 .form-switch {
-  margin-bottom: 19px;
+  margin-bottom: 30px;
   .form-check-input {
     &:active, &:focus {
       border: none;
@@ -143,8 +147,8 @@
     &:checked {
       background-image: url("../../../images/icons/ticketSwitch--on.svg");
       background-color: #ffdc4e;
-      background-position: 18px -2px;
-      background-size: 30px;
+      background-position: 16px -4.5px;
+      background-size: 34px;
     }
   }
 }

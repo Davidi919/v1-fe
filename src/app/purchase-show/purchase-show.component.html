@@ -63,7 +63,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+<div class="modal" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -78,7 +78,7 @@
                     <input type="text" class="form-control" id="cardName">
                 </label>
                 <label for="cardNum" class="modal-label col-12">Card number
-                    <input id="ccn" class="form-control"type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                    <input id="ccn" class="form-control mb-0" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
                 </label>
                 <!-- <div class="row save-card-wrapper">
                     <div class="col-12">
@@ -115,10 +115,10 @@
                         <span class="item-title col-6">Service fee</span>
                         <span class="item-cost col-6 text-end">$ 15.00</span>
                     </div>
-                    <div class="dotted-line"></div>
+                    <div class="dotted-line sub-line"></div>
                     <div class="total-wrapper">
                         <div class="subtotal-row row">
-                            <span class="item-title col-6">Total</span>
+                            <span class="item-title item-total col-6">Total</span>
                             <div class="item-cost col-6 text-end">
                                 <p class="total-text">$ 30.00</p>
                                 <p class="total-subtext">Price including Tax</p>
