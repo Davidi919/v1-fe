@@ -105,13 +105,16 @@
       color: #B0B9D3;
     }
     .item-total {
-      font-size: 18px;
+      font-size: 20px;
       color: white;
-      font-weight: 600;
+      font-weight: 700;
     }
     .item-cost {
       font-weight: 600;
     }
+  }
+  .total-text {
+    font-weight: 700;
   }
   .total-subtext {
     font-size: 10px;
@@ -391,13 +394,16 @@ input {
     color: #fff;
     height: 51px;
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 8px;
     border-radius: 6px;
     border: 0;
     &:focus {
       background-color: #2e303d;
     }
   }
+}
+.sub-line {
+  margin-top: 18px;
 }
 
 .max-width-wrapper {
