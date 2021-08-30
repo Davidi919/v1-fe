@@ -8,6 +8,10 @@
   max-width: 552px;
   margin-top: 140px;
 }
+ul .li-spacing {
+  position: relative;
+      left: -4px;
+}
 .modal.fade .modal-dialog {
   transform: none;
   transition: 0s;
@@ -69,8 +73,13 @@
 .currency {
   margin-bottom: 40px;
   justify-content: space-between;
+  font-weight: 700;
+  padding-left: 0;
   label {
     font-size: 14px;
+    font-weight: 700;
+    width: min-content;
+    padding-left: 0;
   }
 }
 .promo-wrapper {
@@ -98,6 +107,9 @@
     margin-top: 20px;
   }
 }
+#cardName {
+  margin-bottom: 25px;
+}
 .subtotals-wrapper {
   .subtotal-row {
     margin-bottom: 9px;
@@ -105,7 +117,7 @@
       color: #B0B9D3;
     }
     .item-total {
-      font-size: 20px;
+      font-size: 18px;
       color: white;
       font-weight: 700;
     }
@@ -115,6 +127,7 @@
   }
   .total-text {
     font-weight: 700;
+    font-size: 22px;
   }
   .total-subtext {
     font-size: 10px;
@@ -302,8 +315,8 @@
     padding-right: 20px;
   }
   .form-select {
-    width: 75%;
-    height: 39px;
+    width: 380px;
+    height: 40px;
     background-color: #2E303D;
     font-size: 14px;
     color: #fff;

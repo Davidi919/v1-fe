@@ -6,7 +6,10 @@
   -webkit-backdrop-filter: blur(30px);
   padding: 24px;
   margin-bottom: 38px;
-
+  ul .li-spacing {
+    position: relative;
+    left: -4px;
+  }
   .fa-circle {
     color: #ffdc4e;
   }
@@ -38,7 +41,6 @@
     margin-bottom: 15px;
     margin-left: -4px;
     font-weight: 700;
-    
   }
   .light-text {
     color: #b0b9d3;
@@ -118,6 +120,7 @@
   ul {
     padding-left: 20px;
     li {
+      font-weight: 700;
       span {
         position: relative;
         left: -4px;
@@ -134,14 +137,14 @@
     }
     .description-list {
       margin-bottom: 25px;
-      
     }
   }
 }
 .form-switch {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   .form-check-input {
-    &:active, &:focus {
+    &:active,
+    &:focus {
       border: none;
     }
     transition: 0ms;
